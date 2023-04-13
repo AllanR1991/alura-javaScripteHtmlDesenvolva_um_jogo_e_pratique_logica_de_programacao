@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<input />
+<button>Compare com o meu segredo</button>
+
+<script>
+    var segredo = Math.round(Math.random()*10);
+    /*Obter dados de um input*/
+    var input = document.querySelector("input");
+    input.focus();
+    function verifica() {
+        /* Input.Value obtem o valor contido no input.*/
+        if (input.value == segredo) {
+            alert("Você ACERTOU!");
+        } else {
+            alert("Você ERROU!!!!!!");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    /* Ele copia o codigo da funcao do verifica para o button.onclick, caso colocarmos "verifica()" ele execulta direto a funcao; */
+    button.onclick = verifica;
+</script>

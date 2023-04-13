@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+
+<script>
+    /*JS é case sensitive.*/
+
+    /*document.write -> escreve no html*/
+    document.write("A idade do flavio é : ");
+    document.write("<br>")/*esse comando é passado para o html que por sua vez interpreta o codigo corretamente.*/
+    document.write(18+30);/*representa numero*/
+    document.write("<br>"+"18"+20)/*Neste caso o Java Script converte o numero 20 em texto e concatena e não soma pois é uma String + um numero.*/
+    document.write("<br>"+"18"+"20")/*Ele concatena e não soma pois são 2 String.*/
+
+    document.write("<br>"+"<br>Allan nasceu em:<br>");
+    document.write(2023 - 32+"<br>");
+
+    document.write("<br>"+"A média das idades é: ");
+    document.write((20+10+30)/3 + "<br>");/*Assim como na matematica ha ordem de precedencia*/
+
+    ano = 2023;
+
+    
+    const date = new Date();
+    var anoAtual = date.getFullYear();  
+
+
+    
+    document.write("<br>A soma das idades é " + ((20+10+30)/3));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Flavio masceu em " + (anoAtual -32) + "anos");
+    document.write("<br>");
+    document.write("Pedro masceu em " + (anoAtual -20) + "anos");
+    document.write("<br>");
+    document.write("Augusto masceu em " + (anoAtual -40) + "anos");
+    document.write("<br>");
+
+
+
+    var idadeFlavio =39;
+    var idadeJoaquim = 20;
+    var idadeBarney = 41;
+
+    var media = (idadeFlavio+idadeJoaquim+idadeBarney)/3;
+    
+    document.write("A média das idades é " + Math.round(media)); 
+    /*Parra arredondar utilizando 2 casas decimais utiliza-se toFixed.*/
+    document.write("A média das idades é " + media.toFixed(2)); 
+
+    var pulaLinha = "<br>";
+
+    var nome = "Flávio";
+    document.write(pulaLinha);
+    document.write(pulaLinha);
+    document.write("A idade de " + nome + " é " + idadeFlavio);
+
+    
+
+    
+    document.write("<br>A soma das idades é " + ((20+10+30)/3));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Flavio masceu em " + (anoAtual -32) + "anos");
+    document.write("<br>");
+    document.write("Pedro masceu em " + (anoAtual -20) + "anos");
+    document.write("<br>");
+    document.write("Augusto masceu em " + (anoAtual -40) + "anos");
+    document.write("<br>");
+
+
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    /* Nome de função sempre colocar um verbo, pois uma função indica uma ação */
+    function pulaLinha(){
+
+        document.write("<br>");    
+
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    const date = new Date();
+    var anoAtual = date.getFullYear();  
+
+    mostra("A soma das idades é " + ((20+10+30)/3));
+    pulaLinha();
+    mostra("Flavio masceu em " + (anoAtual -32) + "anos");
+    pulaLinha();
+    mostra("Pedro masceu em " + (anoAtual -20) + "anos");
+    pulaLinha();
+    mostra("Augusto masceu em " + (anoAtual -40) + "anos");
+    pulaLinha();
+
+</script>
